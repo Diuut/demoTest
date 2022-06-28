@@ -12,7 +12,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @Slf4j
 public class test {
     @Test
-    public void test1(){
+    public void test1() {
         log.info("hello world");
     }
 }
