@@ -2,8 +2,8 @@ package com.diuut.ddt;
 
 import org.springframework.boot.SpringApplication;
 
-public class app {
+public class application {
     public static void main(String[] args) {
-        SpringApplication.run(app.class, args);
+        SpringApplication.run(application.class, args);
     }
 }
