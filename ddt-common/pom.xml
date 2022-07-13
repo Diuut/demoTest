@@ -62,4 +62,7 @@
             <version>${jackson.version}</version>
         </dependency>
     </dependencies>
+    <dependencyManagement>
+
+    </dependencyManagement>
 </project>
