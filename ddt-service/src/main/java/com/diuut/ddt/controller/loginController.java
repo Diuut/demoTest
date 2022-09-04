@@ -18,9 +18,12 @@ public class loginController {
     public BaseResult hello() {
         return BaseResult.ok("hello world");
     }
+    @RequestMapping("/ngTest")
+    public BaseResult ngTest() {
+        return BaseResult.ok("ngTest");
+    }
     @RequestMapping("/hi")
-    public BaseResult handle01(@RequestParam("name") String name) {
-        log.info("请求进来了....");
+    public BaseResult hi(@RequestParam("name") String name) {
         Person person = new Person();
         person.setName(name);
         person.setAge(24);

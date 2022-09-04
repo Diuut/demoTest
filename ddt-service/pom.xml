@@ -2,19 +2,51 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <groupId>com.diuut.ddt</groupId>
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <artifactId>ddt-common</artifactId>
-        <groupId>com.diuut.ddt</groupId>
-        <version>1.0.0</version>
-        <relativePath>../ddt-common/pom.xml</relativePath>
-    </parent>
     <version>1.0.0</version>
     <artifactId>ddt-service</artifactId>
     <packaging>jar</packaging>
-    <dependencies>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <parent>
+        <groupId>com.diuut.ddt</groupId>
+        <artifactId>ddt-dependencies</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../ddt-dependencies/pom.xml</relativePath>
+    </parent>
+    <dependencies>
+        <dependency>
+            <groupId>com.diuut.ddt</groupId>
+            <artifactId>ddt-common</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>

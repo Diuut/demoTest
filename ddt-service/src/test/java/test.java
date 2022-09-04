@@ -1,7 +1,7 @@
 
 import com.diuut.ddt.application;
 import lombok.extern.slf4j.Slf4j;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 /**
@@ -15,4 +15,12 @@ public class test {
     public void test1() {
         log.info("hello world");
     }
+
+    @Test
+    public void test2() {
+       String test="123456";
+        System.out.println(test.indexOf("87"));
+    }
+
+
 }
