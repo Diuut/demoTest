@@ -18,6 +18,8 @@
 
     <properties>
         <skipTests>true</skipTests>
+        <jackson.version>2.13.2</jackson.version>
+        <lombok.version>1.18.24</lombok.version>
     </properties>
 
     <dependencies>
