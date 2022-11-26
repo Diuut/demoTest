@@ -1,5 +1,6 @@
 package com.diuut.ddt.controller;
 
+import com.diuut.ddt.annotation.LogPrint;
 import com.diuut.ddt.pojo.Person;
 import commonUtils.BaseResult;
 import lombok.extern.slf4j.Slf4j;
@@ -23,6 +24,7 @@ public class loginController {
         return BaseResult.ok("ngTest");
     }
     @RequestMapping("/hi")
+    @LogPrint
     public BaseResult hi(@RequestParam("name") String name) {
         Person person = new Person();
         person.setName(name);
