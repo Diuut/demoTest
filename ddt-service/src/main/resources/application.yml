@@ -9,11 +9,11 @@ spring:
   application:
     name: ddt-service
   datasource: # 数据库连接四大属性
-    driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
     #    url: jdbc:mysql://rm-bp119n6c714q8l7i9.mysql.rds.aliyuncs.com:3306/miracle_qdchess?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
-    url: jdbc:mysql://rm-bp119n6c714q8l7i97o.mysql.rds.aliyuncs.com:3306/miracle_qdchess?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
-    username: test001
-    password: CDtest001
+    url: jdbc:mysql://127.0.0.1:3306/mybatis_plus?useUnicode=true&characterEncoding=utf-8&autoReconnect=true
+    username: root
+    password: root
   jackson:
     #日期格式化
     date-format: yyyy-mm-dd hh:mm:ss

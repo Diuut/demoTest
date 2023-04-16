@@ -1,8 +1,10 @@
 package com.diuut.ddt.pojo;
 
+
 import lombok.Data;
 
-import java.util.Date;
+import java.math.BigInteger;
+
 
 /**
  * @Author Diuut
@@ -10,12 +12,12 @@ import java.util.Date;
  */
 @Data
 public class Person {
-    // 正常case
+
+    private Long id;
+
     private String name;
-    // 空对象case
-    private Integer age;
-    // 日期转换case
-    private Date date;
-    // 默认值case
-    private int height;
+
+    private int age;
+
+    private String  email;
 }
